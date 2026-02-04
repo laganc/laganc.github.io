@@ -35,7 +35,7 @@ yesBtn.addEventListener('click', () => {
 
 noBtn.addEventListener('click', () => {
     responseText.textContent = 'UMM EXCUSE ME? Try again.';
-    gif.src = 'https://i.pinimg.com/originals/3e/47/7e/3e477e83c35e2a7a38f19ccdad163faa.gif';
+    gif.src = 'no.gif';
     yesBtn.style.display = 'none';
     noBtn.style.display = 'none';
     title.style.display = 'none';
@@ -109,20 +109,3 @@ window.addEventListener('resize', () => {
     canvas.height = window.innerHeight;
 });
 
-// sounds
-
-yesBtn.addEventListener('mouseenter', () => {
-    hoverSound.play();
-});
-
-noBtn.addEventListener('mouseenter', () => {
-    hoverSound.play();
-});
-
-yesBtn.addEventListener('click', () => {
-    yesSound.play();
-});
-
-noBtn.addEventListener('click', () => {
-    noSound.play();
-});
