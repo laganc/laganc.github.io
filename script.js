@@ -25,16 +25,16 @@ yesBtn.addEventListener('click', () => {
     });
 });
 
-noBtn.addEventListener('mouseover', () => {
-    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
-    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
-    noBtn.style.position = 'absolute';
-    noBtn.style.left = `${x}px`;
-    noBtn.style.top = `${y}px`;
-});
+// noBtn.addEventListener('mouseover', () => {
+//     const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+//     const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+//     noBtn.style.position = 'absolute';
+//     noBtn.style.left = `${x}px`;
+//     noBtn.style.top = `${y}px`;
+// });
 
 noBtn.addEventListener('click', () => {
-    responseText.textContent = 'It\'s okay, I still love you 🤭';
+    responseText.textContent = 'UMM EXCUSE ME? Try again.';
     gif.src = 'https://i.pinimg.com/originals/3e/47/7e/3e477e83c35e2a7a38f19ccdad163faa.gif';
     yesBtn.style.display = 'none';
     noBtn.style.display = 'none';
